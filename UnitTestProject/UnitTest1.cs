@@ -13,7 +13,7 @@ namespace UnitTestProject
         {
             using (var sw = new StringWriter())
             {
-                Console.SetOut(sw)
+                Console.SetOut(sw);
                 ConsoleApp.Program.Main();
 
                 var result = sw.ToString().Trim();

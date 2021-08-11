@@ -7,13 +7,13 @@ namespace UnitTestProject
     [TestClass]
     public class UnitTest1
     {
-        private const string Expected = "Hello World";
+        private const string Expected = "Hello World!";
         [TestMethod]
         public void TestMethod1()
         {
             using (var sw = new StringWriter())
             {
-                Console.SetOut(sw);
+                Console.SetOut(sw)
                 ConsoleApp.Program.Main();
 
                 var result = sw.ToString().Trim();
